@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(238, 238, 238);
+}
+
+html,body{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    background-color:rgb(34, 40, 49);
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 8rem;
+    background-color: rgb(118, 171, 174);
+    position: fixed;
+    z-index: 1;
+}
+
+.home header .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+li{
+    transition: all .5s;
+}
+
+.home header .nav-links li a{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+li:hover{
+    border-bottom: 2px solid white;
+}
+
+.main{
+    width: 100%;
+    padding: 4rem 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+    padding-top: 150px;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.profile-info p{
+    width: 400px;
+}
+
+.profile-info h1{
+    font-size: 3rem;
+    
+}
+
+.profile-info h3{
+    font-size: 1.8rem;
+    color: rgb(118, 171, 174);
+    letter-spacing: 2px;
+}
+
+.profile-info p{
+    word-spacing: 5px;
+}
+
+.profile-info .btns{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-info .btns button{
+    color: rgb(118, 171, 174);
+    background-color: transparent;
+    border: 2px solid rgb(118, 171, 174);
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.profile-info .btns button:first-child{
+    color: rgb(34, 40, 49);
+    background-color: rgb(118, 171, 174);
+}
+
+.profile-info .btns button:hover{
+    background-color: rgb(118, 171, 174);
+    color: rgb(34, 40, 49);
+}
+
+.profile-info .btns button:first-child:hover{
+    background-color: transparent;
+    color: rgb(118, 171, 174);
+    border-color: rgb(118, 171, 174);
+}
+
+.main .profile-pic{
+    animation: move 3s infinite linear alternate-reverse;
+}
+
+.main .profile-pic img{
+    opacity: .8;
+    border-radius: 400px 200px 500px 200px;
+    margin-right: 300px;
+}
+
+footer{
+    width: 100%;
+    padding: 30px;
+}
+
+footer .icons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 200px;
+}
+
+svg{
+    width: 30px;
+    color: white;
+    transition: all .8s;
+    border-radius: 50%;
+}
+
+svg:hover{
+    transform: scale(1.3);
+    box-shadow: 0px 0px 20px rgb(118, 171, 174,1);
+}
+
+.education{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.education h1 {
+    font-size: 3rem;
+}
+
+.education h1 span{
+    color: rgb(118, 171, 174);
+}
+
+.education .container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.data-container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 1rem;
+    align-items: start;
+    justify-content: start;
+}
+
+.education .data-container h2{
+    color: rgb(118, 171, 174);
+}
+
+.education .data-container .data{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border: 2px solid rgb(118, 171, 174);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.education .data-container .data h5{
+    color: rgb(118, 171, 174);
+    font-weight: bold;
+}
+
+.education .data-container .data h3{
+    font-size: 1.5rem;
+}
+
+
+.education .data-container .data p{
+    line-height: 1.1;
+}
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.about h1{
+    font-size: 3.5rem;
+}
+
+.about h1 span{
+    color: rgb(118, 171, 174);
+}
+
+.about div img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 5rem 0 4rem;
+    border: 2px solid rgb(118, 171, 174);
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    outline: 2px solid rgb(118, 171, 174);
+    outline-offset: -10px;
+    padding: 20px;
+}
+
+.about p{
+    width: 80%;
+    margin-bottom: 6rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.about button{
+    background-color: rgb(118, 171, 174);
+    color: rgb(34, 40, 49);
+    border: 2px solid rgb(118, 171, 174);
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.about button:hover{
+    background-color: transparent;
+    color: rgb(118, 171, 174);
+    border-color: rgb(118, 171, 174);
+}
+
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 30rem;
+    gap: 3rem;
+    position: relative;
+}
+
+.contact h1{
+    font-size: 3rem;
+}
+
+.contact h1 span{
+    color: rgb(118, 171, 174);
+}
+
+.contact form{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 20px;
+}
+
+form .inp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form .inp input{
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    color: rgb(118, 171, 174);
+    border-radius: 4px;
+    border: 2px solid rgb(118, 171, 174);
+    background-color: transparent;
+    outline: none;
+}
+
+form #txt{
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid rgb(118, 171, 174);
+    height: 300px;
+    outline: none;
+    padding: 10px;
+    color: rgb(118, 171, 174);
+    font-size: 1.2rem;
+}
+
+
+.contact button{
+    font-size: 1.5rem;
+    color: rgb(34, 40, 49);
+    background-color: rgb(118, 171, 174);
+    border: 2px solid rgb(118, 171, 174);
+    font-weight: bold;
+    padding: 4px 16px;
+    border-radius: 4px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.contact button:hover{
+    background-color: transparent;
+    color: rgb(118, 171, 174);
+} 
+
+.contact footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 150px;
+    background-color: rgb(118, 171, 174);
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact footer p{
+    color: rgb(34, 40, 49);
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.contact footer div{
+    background-color: rgb(34, 40, 49);
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all .5s;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.contact footer svg{
+    width: 15px;
+    font-weight: bold;
+}
+
+.contact footer div:hover{
+    transform: scale(1.2);
+}
+
+@keyframes move {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-50px);
+    }
+    
+}
