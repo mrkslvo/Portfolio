@@ -194,7 +194,6 @@ svg:hover{
 
     .main .profile-pic img{
         width: 50%;
-        border: 1px solid white;
     }
     
 
@@ -206,7 +205,6 @@ svg:hover{
         justify-content: center;
         align-items: center;
         width: 100%;
-        border: 1px solid  white;
     }
 
     .profile-info p{
