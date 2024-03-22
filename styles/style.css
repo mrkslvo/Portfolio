@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(238, 238, 238);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(34, 40, 49);
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 8rem;
+    background-color: rgb(118, 171, 174);
+    position: fixed;
+    z-index: 1;
+}
+
+header .nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+li{
+    transition: all .5s;
+}
+
+header .nav-links li a{
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+li:hover{
+    border-bottom: 2px solid white;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.profile-info p{
+    width: 400px;
+}
+
+.profile-info p span{
+    color: rgb(118, 171, 174);
+    font-weight: bold;
+}
+
+.profile-info h1{
+    font-size: 3rem;
+}
+
+.profile-info h3{
+    font-size: 1.8rem;
+    color: rgb(118, 171, 174);
+    letter-spacing: 2px;
+}
+
+.profile-info p{
+    word-spacing: 5px;
+}
+
+.profile-info .btns{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-info .btns button{
+    color: rgb(118, 171, 174);
+    background-color: transparent;
+    border: 2px solid rgb(118, 171, 174);
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.profile-info .btns button:first-child{
+    color: rgb(34, 40, 49);
+    background-color: rgb(118, 171, 174);
+}
+
+.profile-info .btns button:hover{
+    background-color: rgb(118, 171, 174);
+    color: rgb(34, 40, 49);
+}
+
+.profile-info .btns button:first-child:hover{
+    background-color: transparent;
+    color: rgb(118, 171, 174);
+    border-color: rgb(118, 171, 174);
+}
+
+.main .profile-pic{
+    animation: move 3s infinite linear alternate-reverse;
+}
+
+.main .profile-pic img{
+    opacity: .8;
+    border-radius: 400px 200px 500px 400px;
+}
+
+
+.icons{
+    display: inline-flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    left: 200px;
+    bottom: 25px;
+}
+
+svg{
+    width: 30px;
+    color: white;
+    transition: all .8s;
+    border-radius: 50%;
+}
+
+svg:hover{
+    transform: scale(1.3);
+    box-shadow: 0px 0px 20px rgb(118, 171, 174,1);
+}
+
+
+@keyframes move {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-50px);
+    }
+    
+}
+
+@media screen and (max-width:1100px) {
+    header{
+        padding: 1.1rem 3rem;
+        background-color: rgb(118, 171, 174);
+    }
+
+    .main{
+        flex-direction: column-reverse;
+    }
+
+    .main .profile-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .profile-pic img{
+        width: 50%;
+        border: 1px solid white;
+    }
+    
+
+    .icons{
+        left: 200px;
+    }
+
+    .profile-info{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 1px solid  white;
+    }
+
+    .profile-info p{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .education .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .profile-info h1{
+        font-size: 2rem;
+    }
+
+        
+    .profile-info h3{
+        font-size: 1.4rem;
+    }
+
+    .profile-info p{
+        word-spacing: 5px;
+        font-size: .8rem;
+    }
+
+    .profile-info .btns{
+        display: flex;
+        gap: 2rem;
+    }
+
+    #contact form{
+        width: 100%;
+    }
+
+    form .inp{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .inp input{
+        width: 100%;
+    }
+}

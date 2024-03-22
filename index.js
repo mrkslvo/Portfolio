@@ -5,3 +5,8 @@ let btn1 = document.getElementById('btns1').addEventListener('click', () => {
 let btn2 = document.getElementById('btns2').addEventListener('click', () => {
    alert('Clicked')
 })
+
+let para = document.querySelector('#para').addEventListener('click'
+, () => {
+   alert('Clickeds')
+})
