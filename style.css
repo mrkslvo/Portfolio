@@ -56,13 +56,12 @@ li:hover{
 
 .main{
     width: 100%;
-    padding: 4rem 5rem;
+    padding: .5rem 10rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 5rem;
+    gap: 7rem;
     position: relative;
-    padding-top: 150px;
 }
 
 .profile-info{
@@ -138,15 +137,14 @@ li:hover{
 .main .profile-pic img{
     opacity: .8;
     border-radius: 400px 200px 500px 400px;
-    margin-right: 300px;
+    margin-right: 150px;
 }
 
-footer{
+.footer{
     width: 100%;
-    padding: 30px;
 }
 
-footer .icons{
+.footer .icons{
     display: flex;
     justify-content: start;
     align-items: center;
@@ -173,11 +171,12 @@ svg:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 6rem;
+    gap: 4rem;
 }
 
 .education h1 {
     font-size: 3rem;
+    margin-top: 3rem;
 }
 
 .education h1 span{
@@ -251,7 +250,7 @@ svg:hover{
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    margin: 5rem 0 4rem;
+    margin: 2rem 0;
     border: 2px solid rgb(118, 171, 174);
     border-radius: 50%;
     border-top-color: transparent;
@@ -286,27 +285,27 @@ svg:hover{
     border-color: rgb(118, 171, 174);
 }
 
-.contact{
+#contact{
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: start;
     align-items: center;
-    flex-direction: column;
-    padding: 10rem 30rem;
-    gap: 3rem;
+    flex-direction: column; 
+    gap: 1rem;
     position: relative;
+    padding-top: 7rem;
 }
 
-.contact h1{
+#contact h1{
     font-size: 3rem;
 }
 
-.contact h1 span{
+#contact h1 span{
     color: rgb(118, 171, 174);
 }
 
-.contact form{
+#contact form{
     width: 600px;
     display: flex;
     flex-direction: column;
@@ -345,7 +344,7 @@ form #txt{
 }
 
 
-.contact button{
+#contact button{
     font-size: 1.5rem;
     color: rgb(34, 40, 49);
     background-color: rgb(118, 171, 174);
@@ -357,30 +356,29 @@ form #txt{
     cursor: pointer;
 }
 
-.contact button:hover{
+#contact button:hover{
     background-color: transparent;
     color: rgb(118, 171, 174);
 } 
 
-.contact footer{
-    position: absolute;
-    bottom: 0;
+#footer{
+
     width: 100%;
     padding-left: 150px;
     background-color: rgb(118, 171, 174);
-    height: 10px;
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact footer p{
+#footer p{
     color: rgb(34, 40, 49);
     font-weight: bold;
     font-size: .9rem;
 }
 
-.contact footer div{
+#footer div{
     background-color: rgb(34, 40, 49);
     padding: 5px 10px;
     border-radius: 4px;
@@ -389,12 +387,11 @@ form #txt{
     margin-right: 50px;
 }
 
-.contact footer svg{
+#footer svg{
     width: 15px;
     font-weight: bold;
 }
-
-.contact footer div:hover{
+#footer div:hover{
     transform: scale(1.2);
 }
 
