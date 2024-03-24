@@ -292,7 +292,16 @@ svg:hover{
 
 
 @media screen and (max-width:300px){
-    
+    .education {
+        padding-top: 5rem;
+
+
+     }
+    .about{
+       padding-top: 2rem;
+
+
+    }
     .profile-info p{
         word-spacing: 2px;
     }
