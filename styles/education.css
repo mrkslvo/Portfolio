@@ -29,7 +29,7 @@
 .data-container{
    display: flex;
    flex-direction: column;
-   width: 500px;
+   max-width: 500px;
    gap: 1rem;
    align-items: start;
    justify-content: start;
@@ -47,7 +47,7 @@
    padding: 10px;
    border-radius: 5px;
    width: 100%;
-   height: 120px;
+   min-height: 120px;
 }
 
 .education .data-container .data h5{
